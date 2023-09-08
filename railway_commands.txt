@@ -1,0 +1,4 @@
+railway login
+railway link
+railway run python manage.py createsuperuser
+railway up
