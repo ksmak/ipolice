@@ -198,7 +198,7 @@ class Item(models.Model):
         blank=True,
         null=True
     )
-    size = models.CharField(
+    v_size = models.CharField(
         verbose_name='размер',
         max_length=150,
         blank=True,
