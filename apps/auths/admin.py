@@ -9,6 +9,8 @@ class MyUserAdmin(UserAdmin):
         'name',
         'surname',
         'patronymic',
+        'title',
+        'phone',
         'is_active',
         'is_staff',
         'is_superuser',
@@ -21,6 +23,8 @@ class MyUserAdmin(UserAdmin):
         'name',
         'surname',
         'patronymic',
+        'title',
+        'phone',
     )
 
     fieldsets = (
@@ -31,12 +35,14 @@ class MyUserAdmin(UserAdmin):
                 'password',
             )
         }),
-        ('Ф.И.О.', {
+        ('Персональные данные', {
             'classes': ('wide', ),
             'fields': (
                 'name',
                 'surname',
                 'patronymic',
+                'title',
+                'phone',
             )
         }),
         ('Разрешения', {
@@ -59,12 +65,14 @@ class MyUserAdmin(UserAdmin):
                 'password2',
             )
         }),
-        ('Ф.И.О.', {
+        ('Персональные данные', {
             'classes': ('wide', ),
             'fields': (
                 'name',
                 'surname',
                 'patronymic',
+                'title',
+                'phone',
             )
         }),
         ('Разрешения', {

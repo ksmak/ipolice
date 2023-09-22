@@ -1,0 +1,32 @@
+{
+    "brand": {
+        "title": "Марка/Модель"
+    },
+    "series": {
+        "title": "Серия"
+    },
+    "number": {
+        "title": "Номер"
+    },
+    "year_of_release": {
+        "title": "Год выпуска"
+    },
+    "manufacturer": {
+        "title": "Завод изготовитель / Страна"
+    },
+    "color": {
+        "title": "Основной цвет"
+    },
+    "tone": {
+        "title": "Оттенок цвета"
+    },
+    "size": {
+        "title": "Размер"
+    },
+    "features": {
+        "title": "Особенности"
+    },
+    "state_number": {
+        "title": "Гос. номер"
+    }
+}

@@ -60,6 +60,17 @@ class MyUser(AbstractBaseUser, PermissionsMixin):
         blank=True,
         null=True
     )
+    title = models.CharField(
+        verbose_name='title',
+        max_length=300,
+        blank=True,
+        null=True
+    )
+    phone = models.PositiveBigIntegerField(
+        verbose_name='контактный телефон',
+        blank=True,
+        null=True
+    )
     is_active = models.BooleanField(
         verbose_name='активность',
         default=True
