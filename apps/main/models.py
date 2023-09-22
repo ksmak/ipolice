@@ -2,7 +2,7 @@ from django.db import models
 from auths.models import MyUser
 
 
-class Catergory(models.Model):
+class Category(models.Model):
     """
     Category model
     """
@@ -122,9 +122,9 @@ class Item(models.Model):
         verbose_name='наименование',
         max_length=300
     )
-    catergory = models.ForeignKey(
+    category = models.ForeignKey(
         verbose_name='категория',
-        to=Catergory,
+        to=Category,
         on_delete=models.RESTRICT
     )
     text = models.CharField(

@@ -1,7 +1,7 @@
 from rest_framework.viewsets import ReadOnlyModelViewSet
 from rest_framework.permissions import AllowAny
 
-from .models import Catergory, Item
+from .models import Category, Item
 from .serializers import (
     CategorySerializer,
     ItemSerializer
@@ -12,7 +12,7 @@ class CategoryViewSet(ReadOnlyModelViewSet):
     """
     Category viewset.
     """
-    queryset = Catergory.objects.all()
+    queryset = Category.objects.all()
     serializer_class = CategorySerializer
     permission_classes = (AllowAny, )
 

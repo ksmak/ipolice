@@ -1,7 +1,7 @@
 from rest_framework import serializers
 
 from .models import (
-    Catergory,
+    Category,
     Region,
     District,
     Color,
@@ -42,7 +42,7 @@ class CategorySerializer(serializers.ModelSerializer):
     Category serializer.
     """
     class Meta:
-        model = Catergory
+        model = Category
         fields = '__all__'
 
 

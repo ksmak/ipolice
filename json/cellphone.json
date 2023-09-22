@@ -1,32 +1,42 @@
 {
     "brand": {
-        "title": "Марка/Модель"
+        "title": "Марка/Модель",
+        "type": "text"
     },
     "series": {
-        "title": "Серия"
+        "title": "Серия",
+        "type": "text"
     },
     "number": {
-        "title": "Номер"
+        "title": "Номер",
+        "type": "text"
     },
     "year_of_release": {
-        "title": "Год выпуска"
+        "title": "Год выпуска",
+        "type": "text"
     },
     "manufacturer": {
-        "title": "Завод изготовитель / Страна"
+        "title": "Завод изготовитель / Страна",
+        "type": "text"
     },
     "color": {
-        "title": "Основной цвет"
+        "title": "Основной цвет",
+        "type": "dict"
     },
     "tone": {
-        "title": "Оттенок цвета"
+        "title": "Оттенок цвета",
+        "type": "text"
     },
     "size": {
-        "title": "Размер"
+        "title": "Размер",
+        "type": "text"
     },
     "features": {
-        "title": "Особенности"
+        "title": "Особенности",
+        "type": "text"
     },
     "imei": {
-        "title": "IMEI код"
+        "title": "IMEI код",
+        "type": "text"
     }
 }

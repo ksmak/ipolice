@@ -1,14 +1,14 @@
 from django.contrib import admin
 
 from .models import (
-    Catergory,
+    Category,
     Region,
     District,
     Color,
     Item,
 )
 
-admin.site.register(Catergory)
+admin.site.register(Category)
 admin.site.register(Region)
 admin.site.register(District)
 admin.site.register(Color)
