@@ -6,6 +6,10 @@ class Category(models.Model):
     """
     Category model
     """
+    order = models.PositiveSmallIntegerField(
+        verbose_name='порядковый номер',
+        default=0
+    )
     title = models.CharField(
         verbose_name='наименование',
         max_length=300
@@ -28,6 +32,7 @@ class Category(models.Model):
     class Meta:
         verbose_name = 'категория'
         verbose_name_plural = 'категории'
+        ordering = ('order', )
 
 
 class Region(models.Model):
