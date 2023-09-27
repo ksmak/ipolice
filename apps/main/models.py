@@ -27,7 +27,7 @@ class Category(models.Model):
     )
 
     def __str__(self):
-        return self.title
+        return f"{self.order} - {self.title}"
 
     class Meta:
         verbose_name = 'категория'

@@ -27,7 +27,7 @@
         "title": "Оттенок цвета",
         "type": "text"
     },
-    "size": {
+    "v_size": {
         "title": "Размер",
         "type": "text"
     },
