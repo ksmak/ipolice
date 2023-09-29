@@ -267,7 +267,7 @@ class Info(models.Model):
         blank=True,
         null=True
     )
-    photo = models.ImageField(
+    photo1 = models.ImageField(
         verbose_name='фото',
         upload_to='images/',
         blank=True,
