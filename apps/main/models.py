@@ -247,3 +247,44 @@ class Item(models.Model):
     class Meta:
         verbose_name = 'объявление'
         verbose_name_plural = 'объявления'
+
+
+class Info(models.Model):
+    """
+    Info model.
+    """
+    order = models.PositiveSmallIntegerField(
+        verbose_name='порядковый номер',
+        default=0
+    )
+    title = models.CharField(
+        verbose_name='наименование',
+        max_length=300
+    )
+    text = models.CharField(
+        verbose_name='описание',
+        max_length=5000,
+        blank=True,
+        null=True
+    )
+    photo = models.ImageField(
+        verbose_name='фото',
+        upload_to='images/',
+        blank=True,
+        null=True
+    )
+    date_of_creation = models.DateTimeField(
+        verbose_name='дата создания',
+        auto_now_add=True
+    )
+    date_of_change = models.DateTimeField(
+        verbose_name='дата изменения',
+        auto_now=True
+    )
+
+    def __str__(self):
+       return f"{self.order} - {self.title}"
+
+    class Meta:
+        verbose_name = 'новость'
+        verbose_name_plural = 'новости'

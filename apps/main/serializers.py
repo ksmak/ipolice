@@ -6,6 +6,7 @@ from .models import (
     District,
     Color,
     Item,
+    Info,
 )
 from auths.serializers import MyUserSerializer
 
@@ -57,4 +58,13 @@ class ItemSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Item
+        fields = '__all__'
+
+
+class InfoSerializer(serializers.ModelSerializer):
+    """
+    Info serializer.
+    """
+    class Meta:
+        model = Info
         fields = '__all__'

@@ -1,10 +1,11 @@
 from rest_framework.viewsets import ReadOnlyModelViewSet
 from rest_framework.permissions import AllowAny
 
-from .models import Category, Item
+from .models import Category, Item, Info
 from .serializers import (
     CategorySerializer,
-    ItemSerializer
+    ItemSerializer,
+    InfoSerializer,
 )
 
 
@@ -23,4 +24,12 @@ class ItemViewSet(ReadOnlyModelViewSet):
     """
     queryset = Item.objects.all()
     serializer_class = ItemSerializer
+    permission_classes = (AllowAny, )
+
+class InfoViewSet(ReadOnlyModelViewSet):
+    """
+    Info viewset.
+    """
+    queryset = Info.objects.all()
+    serializer_class = InfoSerializer
     permission_classes = (AllowAny, )
