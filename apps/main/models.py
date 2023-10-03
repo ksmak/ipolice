@@ -10,7 +10,7 @@ class Category(models.Model):
         verbose_name='порядковый номер',
         default=0
     )
-    title = models.CharField(
+    title = models.TextField(
         verbose_name='наименование',
         max_length=300
     )
