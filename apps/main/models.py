@@ -132,7 +132,7 @@ class Item(models.Model):
         to=Category,
         on_delete=models.RESTRICT
     )
-    text = models.CharField(
+    text = models.TextField(
         verbose_name='описание',
         max_length=2000
     )
