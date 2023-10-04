@@ -247,7 +247,7 @@ class Item(models.Model):
     class Meta:
         verbose_name = 'объявление'
         verbose_name_plural = 'объявления'
-        ordering = ('date_of_creation', )
+        ordering = ('-date_of_creation', )
 
 
 class Info(models.Model):
